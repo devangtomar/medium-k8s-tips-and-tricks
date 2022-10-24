@@ -1,6 +1,6 @@
 ### These command line tricks will help you expedite your Kubernetes tasks 🏃🏻‍♂️💨
 
-![](./images/media/image1.jpeg){width="7.5in" height="2.4in"}
+![](./images/media/image1.jpeg)
 
 The most crucial Kubernetes command-line tool, kubectl, enables you to
 execute commands against clusters. Applications may be deployed, cluster
@@ -10,14 +10,13 @@ command-line tool for Kubernetes. Kubectl is best thought of as SSH for
 Kubernetes, which is a useful analogy. It is offered for Windows, Mac,
 and Linux.
 
-![](./images/media/image2.jpeg){width="6.0in" height="6.0in"}
+![](./images/media/image2.jpeg)
 
 In general, kubectl transforms simple commands into the JSON payload
 needed by the API server. To determine the cluster and API server
 endpoint to POST to, it needs a configuration file.
 
-![](./images/media/image3.jpeg){width="4.166666666666667in"
-height="5.216666666666667in"}
+![](./images/media/image3.jpeg)
 
 In this article, we're going to go through some quick and easy tips &
 tricks that will help saving valuable time and making the most out of
@@ -38,8 +37,7 @@ have to repeat the complete command every time.
 Here's how you create aliases on your machine :
 <https://phoenixnap.com/kb/linux-alias-command>
 
-![](./images/media/image4.jpeg){width="5.725in"
-height="4.166666666666667in"}
+![](./images/media/image4.jpeg)
 
 Aliases for a few regularly used commands are shown below. To save time,
 run these before executing kubectl instructions. Instead of typing
@@ -49,7 +47,7 @@ Want even more of these? Visit this [kubectl-aliases GitHub
 repository](https://github.com/ahmetb/kubectl-aliases) which is a true
 haven for fans of aliases.
 
-![](./images/media/image5.jpeg){width="6.0in" height="5.4in"}
+![](./images/media/image5.jpeg)
 
 **Note :** Aliases can be dangerous at times, please use wisely.
 
@@ -57,21 +55,19 @@ haven for fans of aliases.
 
 The \--dry-run flag of the kubectl run command (as well as create,
 apply, and patch) is a fantastic feature that lets you see the
-anticipated changes without actually executing them. 
+anticipated changes without actually executing them.
 
-![](./images/media/image6.jpeg){width="5.0in"
-height="3.3333333333333335in"}
+![](./images/media/image6.jpeg)
 
 This command outputs the manifest of the needed object when used with -o
-yaml. 
+yaml.
 
 For instance :
 
 kubectl \--dry-run=client -o yaml run alpine \--image=alpine \>
 alpine.yaml
 
-![](./images/media/image7.png){width="7.5in"
-height="1.9416666666666667in"}
+![](./images/media/image7.png)
 
 this will produce the following YAML (alpine.yaml) :
 
@@ -88,8 +84,7 @@ the TAB key before realizing it doesn't work? Here's a trick, though. A
 bash autocomplete plug-in that you install in your .bashrc file will
 function flawlessly.
 
-![](./images/media/image8.png){width="6.666666666666667in"
-height="8.75in"}
+![](./images/media/image8.png)
 
 You must first configure bash autocompletion before you can enable
 kubectl autocompletion. This is really helpful if your aliases aren't
@@ -118,8 +113,7 @@ simple, adaptable, and highly effective. But kubectl has one significant
 drawback. To define where you want to construct your pods, services, or
 deployments, you must always use the option \--namespace.
 
-![](./images/media/image9.jpeg){width="4.166666666666667in"
-height="2.7in"}
+![](./images/media/image9.jpeg)
 
 If you choose not to use this option, your objects will probably end up
 in the wrong location.
@@ -129,8 +123,7 @@ The following command can be used to avoid this :
 kubectl config set-context \$(kubectl config current-context)
 \--namespace=yournamespace
 
-![](./images/media/image10.png){width="7.5in"
-height="2.2916666666666665in"}
+![](./images/media/image10.png)
 
 **Note :** Replace yournamespacein the above command to replace with
 your desired namespace
@@ -141,7 +134,7 @@ Instead of repeatedly visiting the online documentation, use kubectl
 explain. It is simple to comprehend and gives you sufficient details
 about a resource standard.
 
-![](./images/media/image11.jpeg){width="6.25in" height="3.65in"}
+![](./images/media/image11.jpeg)
 
 For illustration, let's use kubectl dry-run to build a pod and then
 kubectl explain to learn how to add resource requests and limits to the
@@ -154,7 +147,7 @@ kubectl \--dry-run=client -o yaml run alpine \--image=alpine
 As you can see, the pod's spec.containers section contains the resources
 section. Now let's do kubectl explain :
 
-![](./images/media/image12.png){width="7.5in" height="5.425in"}
+![](./images/media/image12.png)
 
 That should be sufficient information to get you going. To examine
 potential values and pertinent information, see the dnsPolicy and
@@ -166,18 +159,16 @@ kubectl explain pod.spec.restartPolicy
 
 #### 6. Using these kubectl cheatsheets 🎼🏃🏻
 
-![](./images/media/image13.png){width="7.5in"
-height="4.216666666666667in"}
+![](./images/media/image13.png)
 
 **Courtesy :**
 <https://intellipaat.com/blog/tutorial/devops-tutorial/kubernetes-cheat-sheet/>
 
-![](./images/media/image14.png){width="7.5in"
-height="5.191666666666666in"}
+![](./images/media/image14.png)
 
 **Courtesy :** <https://www.upgrad.com/blog/kubernetes-cheat-sheet/>
 
-![](./images/media/image15.jpeg){width="7.5in" height="5.8in"}
+![](./images/media/image15.jpeg)
 
 **Courtesy :** <https://acloudguru.com/>
 
@@ -188,7 +179,7 @@ and have a great Kubernetes experience. You are free to employ whatever
 makes your task simpler and to come up with your own creative strategies
 for doing so.
 
-![](./images/media/image16.jpeg){width="7.5in" height="3.15in"}
+![](./images/media/image16.jpeg)
 
 Gratitude for reading. The article was enjoyable, I hope.
 
