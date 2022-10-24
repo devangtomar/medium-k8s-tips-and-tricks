@@ -41,10 +41,8 @@ Aliases for a few regularly used commands are shown below. To save time,
 run these before executing ```kubectl``` instructions. Instead of typing
 ```kubectl``` , you just need to type k :
 
-<iframe
-  src="https://gist.github.com/devangtomar/7c71346c1a60a9c37561851e52f0caa0"
-  style="width:100%; height:300px;"
-></iframe>
+[https://gist.github.com/devangtomar/7c71346c1a60a9c37561851e52f0caa0]
+(<https://gist.github.com/devangtomar/7c71346c1a60a9c37561851e52f0caa0>)
 
 Want even more of these? Visit this kubectl-aliases GitHub
 repository](<https://github.com/ahmetb/kubectl-aliases>) which is a true
@@ -76,10 +74,7 @@ alpine.yaml
 
 this will produce the following YAML (alpine.yaml) :
 
-<iframe
-  src="https://gist.github.com/devangtomar/4b41cddeacfe13d247d24b3dae55c1d9"
-  style="width:100%; height:300px;"
-></iframe>
+[https://gist.github.com/devangtomar/4b41cddeacfe13d247d24b3dae55c1d9](https://gist.github.com/devangtomar/4b41cddeacfe13d247d24b3dae55c1d9)
 
 Now all you have to do is save it to a file, remove a few system or
 superfluous fields, and you're done. ⏩
@@ -158,18 +153,14 @@ Let's now create the manifest for the pod using a dry-run :
 
 ```kubectl --dry-run=client -o yaml run alpine --image=alpine```
 
-<iframe
-  src="https://gist.github.com/devangtomar/4b41cddeacfe13d247d24b3dae55c1d9"
-  style="width:100%; height:300px;"
-></iframe>
+[https://gist.github.com/devangtomar/4b41cddeacfe13d247d24b3dae55c1d9]
+(<https://gist.github.com/devangtomar/4b41cddeacfe13d247d24b3dae55c1d9>)
 
 As you can see, the pod's ```spec.containers``` section contains the resources
 section. Now let's do ```kubectl``` explain :
 
-<iframe
-  src="https://gist.github.com/devangtomar/2efca01ff8330a9f88193751e3234628"
-  style="width:100%; height:300px;"
-></iframe>
+[https://gist.github.com/devangtomar/2efca01ff8330a9f88193751e3234628]
+(<https://gist.github.com/devangtomar/2efca01ff8330a9f88193751e3234628>)
 
 ![](./images/media/image12.png)
 
