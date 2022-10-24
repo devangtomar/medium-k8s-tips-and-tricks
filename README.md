@@ -76,6 +76,11 @@ alpine.yaml
 
 this will produce the following YAML (alpine.yaml) :
 
+<iframe
+  src="https://gist.github.com/devangtomar/4b41cddeacfe13d247d24b3dae55c1d9"
+  style="width:100%; height:300px;"
+></iframe>
+
 Now all you have to do is save it to a file, remove a few system or
 superfluous fields, and you're done. ⏩
 
@@ -134,7 +139,7 @@ kubectl config set-context $(kubectl config current-context)
 
 ![](./images/media/image10.png)
 
-**Note :** Replace yournamespacein the above command to replace with
+**Note :** Replace `yournamespace` in the above command to replace with
 your desired namespace
 
 #### 5. Using ```kubectl``` explain 📚
@@ -145,16 +150,26 @@ about a resource standard.
 
 ![](./images/media/image11.jpeg)
 
-For illustration, let's use ```kubectl``` dry-run to build a pod and then
-```kubectl``` explain to learn how to add resource requests and limits to the
+For illustration, let's use ```kubectl dry-run``` to build a pod and then
+```kubectl explain``` to learn how to add resource requests and limits to the
 pod.
 
 Let's now create the manifest for the pod using a dry-run :
 
 ```kubectl --dry-run=client -o yaml run alpine --image=alpine```
 
-As you can see, the pod's spec.containers section contains the resources
+<iframe
+  src="https://gist.github.com/devangtomar/4b41cddeacfe13d247d24b3dae55c1d9"
+  style="width:100%; height:300px;"
+></iframe>
+
+As you can see, the pod's ```spec.containers``` section contains the resources
 section. Now let's do ```kubectl``` explain :
+
+<iframe
+  src="https://gist.github.com/devangtomar/2efca01ff8330a9f88193751e3234628"
+  style="width:100%; height:300px;"
+></iframe>
 
 ![](./images/media/image12.png)
 
