@@ -43,8 +43,8 @@ Aliases for a few regularly used commands are shown below. To save time,
 run these before executing ```kubectl``` instructions. Instead of typing
 ```kubectl``` , you just need to type k :
 
-Want even more of these? Visit this [```kubectl```-aliases GitHub
-repository](https://github.com/ahmetb/```kubectl```-aliases) which is a true
+Want even more of these? Visit this kubectl-aliases GitHub
+repository](<https://github.com/ahmetb/kubectl-aliases>) which is a true
 haven for fans of aliases.
 
 ![](./images/media/image5.jpeg)
@@ -53,7 +53,7 @@ haven for fans of aliases.
 
 #### 2. Dry run like a pro 😎
 
-The --dry-run flag of the ```kubectl``` run command (as well as create,
+The ```--dry-run``` flag of the ```kubectl``` run command (as well as create,
 apply, and patch) is a fantastic feature that lets you see the
 anticipated changes without actually executing them.
 
@@ -64,8 +64,10 @@ yaml.
 
 For instance :
 
-`kubectl--dry-run=client -o yaml run alpine --image=alpine >
-alpine.yaml`
+```bash
+kubectl--dry-run=client -o yaml run alpine --image=alpine >
+alpine.yaml
+```
 
 ![](./images/media/image7.png)
 
@@ -92,7 +94,9 @@ enough or if writing out the entire command would make you too lazy.
 
 Use the following command to do that :
 
+```bash
 echo "source <(kubectl completion bash)" >> ~/.bashrc
+```
 
 By merely pressing the TAB key, you can now autocomplete commands, which
 is quite useful and saves a tonne of time.
@@ -111,7 +115,7 @@ instructions.
 ```kubectl``` is one of the most crucial sets of Kubernetes commands. It is
 simple, adaptable, and highly effective. But ```kubectl``` has one significant
 drawback. To define where you want to construct your pods, services, or
-deployments, you must always use the option --namespace.
+deployments, you must always use the option ```--namespace```.
 
 ![](./images/media/image9.jpeg)
 
@@ -120,8 +124,10 @@ in the wrong location.
 
 The following command can be used to avoid this :
 
-```kubectl``` config set-context $(```kubectl``` config current-context)
+```bash
+kubectl config set-context $(kubectl config current-context)
 --namespace=yournamespace
+```
 
 ![](./images/media/image10.png)
 
@@ -142,7 +148,7 @@ pod.
 
 Let's now create the manifest for the pod using a dry-run :
 
-```kubectl``` --dry-run=client -o yaml run alpine --image=alpine
+```kubectl --dry-run=client -o yaml run alpine --image=alpine```
 
 As you can see, the pod's spec.containers section contains the resources
 section. Now let's do ```kubectl``` explain :
@@ -153,9 +159,9 @@ That should be sufficient information to get you going. To examine
 potential values and pertinent information, see the dnsPolicy and
 restartPolicy specifications.
 
-```kubectl``` explain pod.spec.dnsPolicy
+```kubectl explain pod.spec.dnsPolicy```
 
-```kubectl``` explain pod.spec.restartPolicy
+```kubectl explain pod.spec.restartPolicy```
 
 #### 6. Using these ```kubectl``` cheatsheets 🎼🏃🏻
 
