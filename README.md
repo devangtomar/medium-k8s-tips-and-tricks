@@ -221,7 +221,7 @@ the...*devangtomar.medium.com](https://devangtomar.medium.com/how-to-get-started
 #### GitHub URL for this article 💻
 
 [https://github.com/devangtomar/medium-k8s-tips-and-tricks]
-(https://github.com/devangtomar/medium-k8s-tips-and-tricks)
+(<https://github.com/devangtomar/medium-k8s-tips-and-tricks>)
 
 #### Let's connect and chat! Open to anything under the sun 🏖️🍹
 
