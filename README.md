@@ -23,9 +23,7 @@ tricks that will help saving valuable time and making the most out of
 ```kubectl```. If you're still new to Kubernetes, you might want to go through
 my previous article which introduces you to k8s concepts etc.
 
-[**Medium**
-*Edit
-description*medium.com](https://medium.com/@devangtomar/kubernetes-for-dummies-yes-literally-2734cf1a2291)
+[https://github.com/devangtomar/medium-k8s-tips-and-tricks](https://github.com/devangtomar/medium-k8s-tips-and-tricks)
 
 #### 1. Make use of aliases 🖇️
 
@@ -42,6 +40,11 @@ Here's how you create aliases on your machine :
 Aliases for a few regularly used commands are shown below. To save time,
 run these before executing ```kubectl``` instructions. Instead of typing
 ```kubectl``` , you just need to type k :
+
+<iframe
+  src="https://gist.github.com/devangtomar/7c71346c1a60a9c37561851e52f0caa0"
+  style="width:100%; height:300px;"
+></iframe>
 
 Want even more of these? Visit this kubectl-aliases GitHub
 repository](<https://github.com/ahmetb/kubectl-aliases>) which is a true
