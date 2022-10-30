@@ -10,13 +10,13 @@ command-line tool for Kubernetes. ```kubectl``` is best thought of as SSH for
 Kubernetes, which is a useful analogy. It is offered for Windows, Mac,
 and Linux.
 
-![](./images/media/image2.jpeg)
+<img src="./images/media/image2.jpeg" height="400" weight="200">
 
 In general, ```kubectl``` transforms simple commands into the JSON payload
 needed by the API server. To determine the cluster and API server
 endpoint to POST to, it needs a configuration file.
 
-![](./images/media/image3.jpeg)
+<img src="./images/media/image3.jpeg" height="400" weight="200">
 
 In this article, we're going to go through some quick and easy tips &
 tricks that will help saving valuable time and making the most out of
@@ -35,7 +35,7 @@ have to repeat the complete command every time.
 Here's how you create aliases on your machine :
 <https://phoenixnap.com/kb/linux-alias-command>
 
-![](./images/media/image4.jpeg)
+<img src="./images/media/image4.jpeg" height="300" weight="200">
 
 Aliases for a few regularly used commands are shown below. To save time,
 run these before executing ```kubectl``` instructions. Instead of typing
@@ -48,7 +48,7 @@ Want even more of these? Visit this kubectl-aliases GitHub
 repository](<https://github.com/ahmetb/kubectl-aliases>) which is a true
 haven for fans of aliases.
 
-![](./images/media/image5.jpeg)
+<img src="./images/media/image5.jpeg" height="400" weight="200">
 
 **Note :** Aliases can be dangerous at times, please use wisely.
 
@@ -58,7 +58,7 @@ The ```--dry-run``` flag of the ```kubectl``` run command (as well as create,
 apply, and patch) is a fantastic feature that lets you see the
 anticipated changes without actually executing them.
 
-![](./images/media/image6.jpeg)
+<img src="./images/media/image6.jpeg" height="300" weight="200">
 
 This command outputs the manifest of the needed object when used with -o
 yaml.
@@ -89,7 +89,7 @@ the TAB key before realizing it doesn't work? Here's a trick, though. A
 bash autocomplete plug-in that you install in your .bashrc file will
 function flawlessly.
 
-![](./images/media/image8.png)
+<img src="./images/media/image8.png" height="600" weight="400">
 
 You must first configure bash autocompletion before you can enable
 ```kubectl``` autocompletion. This is really helpful if your aliases aren't
@@ -120,7 +120,7 @@ simple, adaptable, and highly effective. But ```kubectl``` has one significant
 drawback. To define where you want to construct your pods, services, or
 deployments, you must always use the option ```--namespace```.
 
-![](./images/media/image9.jpeg)
+<img src="./images/media/image9.jpeg" height="300" weight="200">
 
 If you choose not to use this option, your objects will probably end up
 in the wrong location.
@@ -143,7 +143,7 @@ Instead of repeatedly visiting the online documentation, use ```kubectl```
 explain. It is simple to comprehend and gives you sufficient details
 about a resource standard.
 
-![](./images/media/image11.jpeg)
+<img src="./images/media/image11.jpeg" height="300" weight="200">
 
 For illustration, let's use ```kubectl dry-run``` to build a pod and then
 ```kubectl explain``` to learn how to add resource requests and limits to the
