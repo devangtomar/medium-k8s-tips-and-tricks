@@ -162,7 +162,7 @@ section. Now let's do ```kubectl``` explain :
 [https://gist.github.com/devangtomar/2efca01ff8330a9f88193751e3234628]
 (<https://gist.github.com/devangtomar/2efca01ff8330a9f88193751e3234628>)
 
-![](./images/media/image12.png)
+<img src="./images/media/image12.png" height="350" weight="200">
 
 That should be sufficient information to get you going. To examine
 potential values and pertinent information, see the dnsPolicy and
@@ -194,7 +194,7 @@ and have a great Kubernetes experience. You are free to employ whatever
 makes your task simpler and to come up with your own creative strategies
 for doing so.
 
-![](./images/media/image16.jpeg)
+<img src="./images/media/image16.jpeg" height="200" weight="200">
 
 Gratitude for reading. The article was enjoyable, I hope.
 
